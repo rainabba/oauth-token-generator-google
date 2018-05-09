@@ -1,0 +1,31 @@
+{
+  "name": "oauth-token-generator-google",
+  "version": "0.0.1",
+  "description": "After many battles with nodejs server authentication against Google APIs (Drive in particular), I've come up with an NPM module that needs only a well configured client_secrets.json and it will save the token locally and try to reuse it when it's there.",
+  "main": "lib/index.js",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=8.11.0",
+    "npm": ">=5.0.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rainabba/oauth-token-generator-google.git"
+  },
+  "dependencies": {
+    "googleapis": "^29.0.0"
+  },
+  "scripts": {
+    "start": "node lib/index.js",
+    "test": "lab --inspect -t 50 -c -M 20000 -r console -o stdout -r html --verbose -o test/CODE_COVERAGE.html -l -I testAccount,Config,lab,Lab,vtv,Hoek,user,auth,async"
+  },
+  "author": "Michael Richardson",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "code": "^5.2.0",
+    "lab": "^15.4.4"
+  }
+}
