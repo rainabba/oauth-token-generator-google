@@ -27,19 +27,11 @@ lab.experiment("Google API ", { timeout: 35000 }, () => {
                     }, (err, res) => {
                         if (err) {
                             console.error('The API returned an error.');
-                            throw err;
+                            console.dir( err );
+                            reject(err);
                         }
-                        const files = res.data.files;
-                        expect(files).to.be.an.array();
-
-                        if (files.length === 0) {
-                            console.log('No files found.');
-                        } else {
-                            console.log('Files:');
-                            for (const file of files) {
-                                // console.log(`${file.name} (${file.id})`);  //Not ideal in the test, but nice when debugging
-                            }
-                        }
+                        expect(res.data.files).to.be.an.array();
+                        expect(res.data.files.length).to.be.greaterThan(0);
                         resolve();
                     });
                 })
