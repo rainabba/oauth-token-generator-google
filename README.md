@@ -25,3 +25,6 @@ retrieve a list of files in root of Drive for the configured credentials.
 The default test assumes you have created a private/client_secret.json in
 the project folder. The private/ folder is in .gitignore and that path is
 fully configurable as the only thing provided when executing the module.
+
+`npm test` to run basic tests.
+`npm run test:dev` to test with debugging (to troubleshoot your file path, contents, etc.. until you get things working as expected with this plugin)
