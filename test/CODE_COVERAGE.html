@@ -536,7 +536,7 @@
         <li><a href="#tests">Test Report</a></li>
         <li><a href="#coverage">Coverage Report</a></li>
         <li class="">
-            <span class="cov medium">64.18</span>
+            <span class="cov medium">60.29</span>
             <a href="#lib/index.js"><span class="dirname">lib/</span><span class="basename">index.js</span></a>
         </li>
         <li><a href="#linting">Linting Report</a></li>
@@ -547,7 +547,7 @@
           <div class="failures">0</div>
           <div class="skipped">0</div>
           <div class="test-count">1</div>
-          <div class="duration">737</div>
+          <div class="duration">1084</div>
       </div>
       <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="success" id="show-success">
@@ -572,7 +572,7 @@
               <td class="test-title">Google API  Drive ListFiles
                   
               </td>
-              <td class="test-duration">734</td>
+              <td class="test-duration">1080</td>
           </tr>
           </tbody>
       </table>
@@ -580,10 +580,10 @@
     </div>    <div id="coverage">
         <h1>Code Coverage Report</h1>
         <div class="stats medium">
-            <div class="percentage">64.18%</div>
-            <div class="sloc">67</div>
-            <div class="hits">43</div>
-            <div class="misses">24</div>
+            <div class="percentage">60.29%</div>
+            <div class="sloc">68</div>
+            <div class="hits">41</div>
+            <div class="misses">27</div>
         </div>
         <div id="filters">
           <input type="checkbox" checked="" onchange="filter(this)" value="generated" id="show-generated">
@@ -593,10 +593,10 @@
             <div class="file ">
                 <h2 id="lib/index.js">lib/index.js </h2>
                 <div class="stats medium">
-                    <div class="percentage">64.18%</div>
-                    <div class="sloc">67</div>
-                    <div class="hits">43</div>
-                    <div class="misses">24</div>
+                    <div class="percentage">60.29%</div>
+                    <div class="sloc">68</div>
+                    <div class="hits">41</div>
+                    <div class="misses">27</div>
                 </div>
                 <table>
                     <thead>
@@ -708,50 +708,50 @@
                         </tr>            <tr id="lib/index.js__17" class="hit">
                           <td class="line" data-tooltip>17</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">    console.log(README);</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
                           
                         </tr>            <tr id="lib/index.js__18" class="hit">
                           <td class="line" data-tooltip>18</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="hits" data-tooltip>1</td>
+                          <td class="source">    const path &#x3D; require(&#x27;path&#x27;),</td>
                           
                         </tr>            <tr id="lib/index.js__19" class="hit">
                           <td class="line" data-tooltip>19</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">    const path &#x3D; require(&#x27;path&#x27;),</td>
-                          
-                        </tr>            <tr id="lib/index.js__20" class="hit">
-                          <td class="line" data-tooltip>20</td>
-                          <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">        fs &#x3D; require(&#x27;fs&#x27;),</td>
                           
-                        </tr>            <tr id="lib/index.js__21" class="chunks">
-                          <td class="line" data-tooltip>21</td>
+                        </tr>            <tr id="lib/index.js__20" class="chunks">
+                          <td class="line" data-tooltip>20</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source"><div>        keyfile &#x3D; </div><div class="miss true" data-tooltip>path.normalize(configFilePath)</div><div> ? path.normalize(configFilePath) : (</div><div class="miss never" data-tooltip>process.env.PATH_TO_CLIENT_SECRET_JSON &amp;&amp; process.env.PATH_TO_CLIENT_SECRET_JSON.length &gt; 1 ? path.normalize(process.env.PATH_TO_CLIENT_SECRET_JSON) : null</div><div>),</div></td>
+                          
+                        </tr>            <tr id="lib/index.js__21" class="hit">
+                          <td class="line" data-tooltip>21</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source">        tokenfile &#x3D; keyfile.replace(/\.json$/g, &#x27;&#x27;) + &#x27;.token&#x27;,</td>
                           
                         </tr>            <tr id="lib/index.js__22" class="hit">
                           <td class="line" data-tooltip>22</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        tokenfile &#x3D; keyfile.replace(/\.json$/g, &#x27;&#x27;) + &#x27;.token&#x27;,</td>
+                          <td class="source">        keys &#x3D; JSON.parse(fs.readFileSync(keyfile)),</td>
                           
                         </tr>            <tr id="lib/index.js__23" class="hit">
                           <td class="line" data-tooltip>23</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        keys &#x3D; JSON.parse(fs.readFileSync(keyfile)),</td>
+                          <td class="source">        scopes &#x3D; [&#x27;https://www.googleapis.com/auth/drive&#x27;],</td>
                           
                         </tr>            <tr id="lib/index.js__24" class="hit">
                           <td class="line" data-tooltip>24</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        scopes &#x3D; [&#x27;https://www.googleapis.com/auth/drive&#x27;], { google } &#x3D; require(&#x27;googleapis&#x27;);</td>
+                          <td class="source">        {google} &#x3D; require(&#x27;googleapis&#x27;);</td>
                           
                         </tr>            <tr id="lib/index.js__25" class="hit">
                           <td class="line" data-tooltip>25</td>
@@ -759,11 +759,11 @@
                           <td class="hits" data-tooltip></td>
                           <td class="source"></td>
                           
-                        </tr>            <tr id="lib/index.js__26" class="hit">
+                        </tr>            <tr id="lib/index.js__26" class="chunks">
                           <td class="line" data-tooltip>26</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">        console.log( &#x27;Trying with keyfile: &#x27;, keyfile );</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>        if ( </div><div class="miss false" data-tooltip>process.env.NODE_ENV&#x3D;&#x3D;&#x27;dev&#x27;</div><div> ) console.log( &#x27;Trying with keyfile: &#x27;, keyfile );</div></td>
                           
                         </tr>            <tr id="lib/index.js__27" class="hit">
                           <td class="line" data-tooltip>27</td>
@@ -861,11 +861,11 @@
                           <td class="hits" data-tooltip>1</td>
                           <td class="source">                    client.credentials &#x3D; token;</td>
                           
-                        </tr>            <tr id="lib/index.js__43" class="hit">
+                        </tr>            <tr id="lib/index.js__43" class="chunks">
                           <td class="line" data-tooltip>43</td>
                           <td class="lint empty"></td>
-                          <td class="hits" data-tooltip>1</td>
-                          <td class="source">                    console.log(&#x27;Loaded existing tokenfile: &#x27; + tokenfile);</td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"><div>                    if ( </div><div class="miss false" data-tooltip>process.env.NODE_ENV&#x3D;&#x3D;&#x27;dev&#x27;</div><div> ) console.log(&#x27;Loaded existing tokenfile: &#x27; + tokenfile);</div></td>
                           
                         </tr>            <tr id="lib/index.js__44" class="hit">
                           <td class="line" data-tooltip>44</td>
@@ -903,224 +903,230 @@
                           <td class="hits" data-tooltip></td>
                           <td class="source">            } else {</td>
                           
-                        </tr>            <tr id="lib/index.js__50" class="hit">
+                        </tr>            <tr id="lib/index.js__50" class="miss">
                           <td class="line" data-tooltip>50</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                //Start with node --inspect-brk so you have time to hit this then retrieve the code and &#x60;code&#x3D;&#x27;{yournewcode}&#x27;&#x60; in the console</td>
+                          <td class="source" data-tooltip>                if ( process.env.NODE_ENV&#x3D;&#x3D;&#x27;dev&#x27; ) console.log(README);</td>
                           
-                        </tr>            <tr id="lib/index.js__51" class="miss">
+                        </tr>            <tr id="lib/index.js__51" class="hit">
                           <td class="line" data-tooltip>51</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                console.log(&#x27;\nGet code from:\n\n&#x27; + client.generateAuthUrl({ access_type: &#x27;offline&#x27;, scope: scopes }));</td>
+                          <td class="source">                //Start with node --inspect-brk so you have time to hit this then retrieve the code and &#x60;code&#x3D;&#x27;{yournewcode}&#x27;&#x60; in the console</td>
                           
                         </tr>            <tr id="lib/index.js__52" class="miss">
                           <td class="line" data-tooltip>52</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                console.log(&#x27;\nWhen you have that code, return and run &#x60;code&#x3D;&quot;yourNewCode&quot;&#x60; in the console and resume the debugger.\n\n&#x27;);</td>
+                          <td class="source" data-tooltip>                console.log(&#x27;\nGet code from:\n\n&#x27; + client.generateAuthUrl({ access_type: &#x27;offline&#x27;, scope: scopes }));</td>
                           
-                        </tr>            <tr id="lib/index.js__53" class="hit">
+                        </tr>            <tr id="lib/index.js__53" class="miss">
                           <td class="line" data-tooltip>53</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                debugger;</td>
+                          <td class="source" data-tooltip>                console.log(&#x27;\nWhen you have that code, return and run &#x60;code&#x3D;&quot;yourNewCode&quot;&#x60; in the console and resume the debugger.\n\n&#x27;);</td>
                           
                         </tr>            <tr id="lib/index.js__54" class="hit">
                           <td class="line" data-tooltip>54</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
+                          <td class="source">                debugger;</td>
+                          
+                        </tr>            <tr id="lib/index.js__55" class="hit">
+                          <td class="line" data-tooltip>55</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
                           <td class="source"></td>
                           
-                        </tr>            <tr id="lib/index.js__55" class="miss">
-                          <td class="line" data-tooltip>55</td>
+                        </tr>            <tr id="lib/index.js__56" class="miss">
+                          <td class="line" data-tooltip>56</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source" data-tooltip>                client.getTokenAsync({ code: code })</td>
                           
-                        </tr>            <tr id="lib/index.js__56" class="hit">
-                          <td class="line" data-tooltip>56</td>
+                        </tr>            <tr id="lib/index.js__57" class="hit">
+                          <td class="line" data-tooltip>57</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">                    .then(res &#x3D;&gt; {</td>
                           
-                        </tr>            <tr id="lib/index.js__57" class="chunks">
-                          <td class="line" data-tooltip>57</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source"><div>                        </div><div class="miss never" data-tooltip>if (res.tokens) {</div></td>
-                          
-                        </tr>            <tr id="lib/index.js__58" class="miss">
+                        </tr>            <tr id="lib/index.js__58" class="chunks">
                           <td class="line" data-tooltip>58</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                            let tokens &#x3D; res.tokens;</td>
+                          <td class="source"><div>                        </div><div class="miss never" data-tooltip>if (res.tokens) {</div></td>
                           
                         </tr>            <tr id="lib/index.js__59" class="miss">
                           <td class="line" data-tooltip>59</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                            fs.writeFile(tokenfile, JSON.stringify(tokens), err &#x3D;&gt; {</td>
+                          <td class="source" data-tooltip>                            let tokens &#x3D; res.tokens;</td>
                           
-                        </tr>            <tr id="lib/index.js__60" class="chunks">
+                        </tr>            <tr id="lib/index.js__60" class="miss">
                           <td class="line" data-tooltip>60</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div>                                </div><div class="miss never" data-tooltip>if (err) {</div></td>
+                          <td class="source" data-tooltip>                            fs.writeFile(tokenfile, JSON.stringify(tokens), err &#x3D;&gt; {</td>
                           
-                        </tr>            <tr id="lib/index.js__61" class="miss">
+                        </tr>            <tr id="lib/index.js__61" class="chunks">
                           <td class="line" data-tooltip>61</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                                    console.error(&#x27;Error writing token file.&#x27;);</td>
+                          <td class="source"><div>                                </div><div class="miss never" data-tooltip>if (err) {</div></td>
                           
                         </tr>            <tr id="lib/index.js__62" class="miss">
                           <td class="line" data-tooltip>62</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                                    console.dir(err);</td>
+                          <td class="source" data-tooltip>                                    console.error(&#x27;Error writing token file.&#x27;);</td>
                           
-                        </tr>            <tr id="lib/index.js__63" class="chunks">
+                        </tr>            <tr id="lib/index.js__63" class="miss">
                           <td class="line" data-tooltip>63</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div class="miss never" data-tooltip>                                }</div></td>
+                          <td class="source" data-tooltip>                                    console.dir(err);</td>
                           
-                        </tr>            <tr id="lib/index.js__64" class="miss">
+                        </tr>            <tr id="lib/index.js__64" class="chunks">
                           <td class="line" data-tooltip>64</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                                console.log(&quot;Token file written to:&quot; + tokenfile);</td>
+                          <td class="source"><div class="miss never" data-tooltip>                                }</div></td>
                           
                         </tr>            <tr id="lib/index.js__65" class="miss">
                           <td class="line" data-tooltip>65</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                                client.credentials &#x3D; tokens;</td>
+                          <td class="source" data-tooltip>                                if ( process.env.NODE_ENV&#x3D;&#x3D;&#x27;dev&#x27; ) console.log(&quot;Token file written to:&quot; + tokenfile);</td>
                           
                         </tr>            <tr id="lib/index.js__66" class="miss">
                           <td class="line" data-tooltip>66</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                                resolve(client);</td>
+                          <td class="source" data-tooltip>                                client.credentials &#x3D; tokens;</td>
                           
-                        </tr>            <tr id="lib/index.js__67" class="hit">
+                        </tr>            <tr id="lib/index.js__67" class="miss">
                           <td class="line" data-tooltip>67</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                            });</td>
+                          <td class="source" data-tooltip>                                resolve(client);</td>
                           
                         </tr>            <tr id="lib/index.js__68" class="hit">
                           <td class="line" data-tooltip>68</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                        } else {</td>
+                          <td class="source">                            });</td>
                           
-                        </tr>            <tr id="lib/index.js__69" class="miss">
+                        </tr>            <tr id="lib/index.js__69" class="hit">
                           <td class="line" data-tooltip>69</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                            console.error(&#x27;Error getting oAuth tokens. See res object for more details&#x27;);</td>
+                          <td class="source">                        } else {</td>
                           
                         </tr>            <tr id="lib/index.js__70" class="miss">
                           <td class="line" data-tooltip>70</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                            console.dir(res);</td>
+                          <td class="source" data-tooltip>                            console.error(&#x27;Error getting oAuth tokens. See res object for more details&#x27;);</td>
                           
-                        </tr>            <tr id="lib/index.js__71" class="chunks">
+                        </tr>            <tr id="lib/index.js__71" class="miss">
                           <td class="line" data-tooltip>71</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"><div class="miss never" data-tooltip>                        }</div></td>
+                          <td class="source" data-tooltip>                            console.dir(res);</td>
                           
-                        </tr>            <tr id="lib/index.js__72" class="hit">
+                        </tr>            <tr id="lib/index.js__72" class="chunks">
                           <td class="line" data-tooltip>72</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                    })</td>
+                          <td class="source"><div class="miss never" data-tooltip>                        }</div></td>
                           
                         </tr>            <tr id="lib/index.js__73" class="hit">
                           <td class="line" data-tooltip>73</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
+                          <td class="source">                    })</td>
+                          
+                        </tr>            <tr id="lib/index.js__74" class="hit">
+                          <td class="line" data-tooltip>74</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
                           <td class="source">                    .catch(err &#x3D;&gt; {</td>
                           
-                        </tr>            <tr id="lib/index.js__74" class="chunks">
-                          <td class="line" data-tooltip>74</td>
+                        </tr>            <tr id="lib/index.js__75" class="chunks">
+                          <td class="line" data-tooltip>75</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source"><div>                        </div><div class="miss never" data-tooltip>console.error(&#x27;Error getting oAuth tokens&#x27;);</div></td>
                           
-                        </tr>            <tr id="lib/index.js__75" class="miss">
-                          <td class="line" data-tooltip>75</td>
-                          <td class="lint empty"></td>
-                          <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>                        console.dir(err);</td>
-                          
-                        </tr>            <tr id="lib/index.js__76" class="hit">
+                        </tr>            <tr id="lib/index.js__76" class="miss">
                           <td class="line" data-tooltip>76</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">                    });</td>
+                          <td class="source" data-tooltip>                        console.dir(err);</td>
                           
                         </tr>            <tr id="lib/index.js__77" class="hit">
                           <td class="line" data-tooltip>77</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="source">                    });</td>
                           
                         </tr>            <tr id="lib/index.js__78" class="hit">
                           <td class="line" data-tooltip>78</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">            }</td>
+                          <td class="source"></td>
                           
                         </tr>            <tr id="lib/index.js__79" class="hit">
                           <td class="line" data-tooltip>79</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="source">            }</td>
                           
                         </tr>            <tr id="lib/index.js__80" class="hit">
                           <td class="line" data-tooltip>80</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">        });</td>
+                          <td class="source"></td>
                           
                         </tr>            <tr id="lib/index.js__81" class="hit">
                           <td class="line" data-tooltip>81</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="source">        });</td>
                           
                         </tr>            <tr id="lib/index.js__82" class="hit">
                           <td class="line" data-tooltip>82</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    } else {</td>
+                          <td class="source"></td>
                           
-                        </tr>            <tr id="lib/index.js__83" class="miss">
+                        </tr>            <tr id="lib/index.js__83" class="hit">
                           <td class="line" data-tooltip>83</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source" data-tooltip>        throw error(&#x27;configFilePath not provided&#x27;);</td>
+                          <td class="source">    } else {</td>
                           
-                        </tr>            <tr id="lib/index.js__84" class="hit">
+                        </tr>            <tr id="lib/index.js__84" class="miss">
                           <td class="line" data-tooltip>84</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source">    }</td>
+                          <td class="source" data-tooltip>        throw error(&#x27;configFilePath not provided&#x27;);</td>
                           
                         </tr>            <tr id="lib/index.js__85" class="hit">
                           <td class="line" data-tooltip>85</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
-                          <td class="source"></td>
+                          <td class="source">    }</td>
                           
                         </tr>            <tr id="lib/index.js__86" class="hit">
                           <td class="line" data-tooltip>86</td>
+                          <td class="lint empty"></td>
+                          <td class="hits" data-tooltip></td>
+                          <td class="source"></td>
+                          
+                        </tr>            <tr id="lib/index.js__87" class="hit">
+                          <td class="line" data-tooltip>87</td>
                           <td class="lint empty"></td>
                           <td class="hits" data-tooltip></td>
                           <td class="source">}</td>
